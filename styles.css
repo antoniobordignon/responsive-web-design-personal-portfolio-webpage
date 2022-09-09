@@ -1,6 +1,12 @@
-:root{
-    --color-header: rgb(0, 0, 100);
+/*general*/
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --color-font: #ffffff;
+    --color-font2: rgb(0, 0, 140);
+    --color-header: rgb(0, 70, 0);
+    --color-welcomesection: rgb(70, 0, 0);
 }
 
 * {
@@ -9,13 +15,17 @@
     box-sizing: border-box;
 }
 
-
 body {
     background-color: black;
-    color: white;
+    color: var(--color-font);
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-font);
+}
 
+/*header*/
 
 #navbar {
     background-color: var(--color-header);
@@ -30,7 +40,8 @@ body {
 #navbar a {
     margin: auto;
     margin-right: 1.5em;
-    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 
 #navbar ul {
@@ -43,12 +54,30 @@ body {
     font-size: 1.5em;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
+/*first section*/
 
 #welcome-section {
-    margin-top: 7em;
+    background-color: var(--color-welcomesection);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
 }
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 3.5em;
+}
+
+#welcome-section p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: var(--color-font2);
+    margin-top: 1em;
+}
+
