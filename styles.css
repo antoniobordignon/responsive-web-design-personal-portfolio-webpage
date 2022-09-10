@@ -8,16 +8,18 @@
     --color-header: rgb(0, 70, 0);
     --color-welcomesection: rgb(70, 0, 0);
     --color-projectssection: rgb(140, 70, 0);
+    --color-contactsection: rgb(10, 10, 10);
+    --color-gridborder: rgb(0, 0, 0);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
-    background-color: black;
     color: var(--color-font);
 }
 
@@ -93,9 +95,9 @@ h1 {
     background-color: var(--color-projectssection);
     text-align: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     padding-top: 7em;
-
+    padding-bottom: 5em;
 }
 
 #projects h2{
@@ -106,6 +108,7 @@ h1 {
     font-size: 2.5em;
     border-bottom: solid .1em var(--color-font);
     color: var(--color-font);
+    margin-bottom: 1em;
 }
 
 #projects p, #Showall {
@@ -115,6 +118,10 @@ h1 {
     color: var(--color-font);  
 }
 
+#projects p {
+    padding: 20px;
+}
+
 .projectboard{
     display: flex;
     flex-wrap: wrap;
@@ -122,17 +129,56 @@ h1 {
     max-width: 100em;
     justify-content: center;
     margin: auto;
+    margin-bottom: 4em;
 }
 
 #projectitem {
-    margin: 0 10px;
+    margin: 10px 10px;
     display: flex;
+    background-color: var(--color-gridborder);
+    border-radius: 4%;
 
 }
 
 #projectitem img {
     flex: 0 1 160px;
-    margin: 0 10px;
     max-width: 25em;
-    border: 2px solid black;
+    border: 2px solid var(--color-gridborder);
+}
+
+#Showall {
+    background-color: var(--color-gridborder);
+    padding: .5em 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+/*third section*/
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-contactsection);
+    width: 100%;
+    height: 92vh; 
+}
+
+#contacts {
+    padding: 3em;
+}
+
+#contact h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 4em;
+    color: var(--color-font);
+}
+
+#profile-link {
+    margin: auto;
+    padding: 3em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
 }
