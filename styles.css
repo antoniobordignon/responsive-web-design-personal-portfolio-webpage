@@ -3,14 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
 
 :root{
-    --color-font: #ffffff;
-    --color-font2: rgb(0, 0, 140);
-    --color-header: rgb(0, 70, 0);
-    --color-welcomesection: rgb(70, 0, 0);
-    --color-projectssection: rgb(140, 70, 0);
-    --color-contactsection: rgb(10, 10, 10);
+    --color-font: rgb(220,220,220);
+    --color-font2: linear-gradient(90deg, rgb(92, 116, 255), rgb(110, 140, 255));
+    --color-header: linear-gradient(90deg, rgb(37, 46, 122), rgb(46, 58, 152), rgb(55, 70, 182));
+    --color-welcomesection: linear-gradient(90deg,rgb(20, 26, 32) , rgb(41, 52, 64)) ;
+    --color-projectssection: linear-gradient(90deg,rgb(13, 16, 42) 100% , rgb(9, 11, 27));
+    --color-contactsection: linear-gradient(90deg,rgb(31, 39, 48) , rgb(62, 78, 96));
     --color-gridborder: rgb(0, 0, 0);
 }
+
 
 * {
     margin: 0;
@@ -36,7 +37,7 @@ img {
 /*header*/
 
 #navbar {
-    background-color: var(--color-header);
+    background: var(--color-header);
     position: fixed;
     top: 0;
     display: flex;
@@ -65,7 +66,7 @@ img {
 /*first section*/
 
 #welcome-section {
-    background-color: var(--color-welcomesection);
+    background: var(--color-welcomesection);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,14 +86,18 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 2em;
-    color: var(--color-font2);
     margin-top: .25em;
+    background-image: var(--color-font2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(224, 255, 79);
 }
 
 /*second section*/
 
 #projects {
-    background-color: var(--color-projectssection);
+    background: var(--color-projectssection);
     text-align: center;
     width: 100%;
     height: 100%;
@@ -135,7 +140,7 @@ h1 {
 #projectitem {
     margin: 10px 10px;
     display: flex;
-    background-color: var(--color-gridborder);
+    background: var(--color-gridborder);
     border-radius: 4%;
 
 }
@@ -147,7 +152,7 @@ h1 {
 }
 
 #Showall {
-    background-color: var(--color-gridborder);
+    background: var(--color-gridborder);
     padding: .5em 1em;
     font-family: 'Roboto', sans-serif;
 }
@@ -159,7 +164,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-contactsection);
+    background: var(--color-contactsection);
     width: 100%;
     height: 92vh; 
 }
