@@ -26,6 +26,11 @@ a {
     color: var(--color-font);
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 /*header*/
 
 #navbar {
@@ -90,6 +95,7 @@ h1 {
     width: 100%;
     height: 100vh;
     padding-top: 7em;
+
 }
 
 #projects h2{
@@ -106,5 +112,27 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 1.3em;
-    color: var(--color-font);
+    color: var(--color-font);  
+}
+
+.projectboard{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 160px;
+    max-width: 100em;
+    justify-content: center;
+    margin: auto;
+}
+
+#projectitem {
+    margin: 0 10px;
+    display: flex;
+
+}
+
+#projectitem img {
+    flex: 0 1 160px;
+    margin: 0 10px;
+    max-width: 25em;
+    border: 2px solid black;
 }
