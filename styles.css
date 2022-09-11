@@ -113,12 +113,10 @@ h1 {
 }
 
 #projects h2{
-    max-width: 640px;
     margin: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 2.5em;
-    border-bottom: solid .1em var(--color-font);
     color: var(--color-font);
     margin-bottom: 1em;
 }
@@ -172,6 +170,7 @@ h1 {
     background: var(--color-gridborder);
     padding: .5em 1em;
     font-family: 'Roboto', sans-serif;
+    
 }
 
 #Showall:hover {
@@ -226,8 +225,9 @@ h1 {
 
 @media screen and (max-width: 1300px) {
   .projectboard{
-    margin: auto 10px;
+    margin: 4em 10px;
     }
+
 }
 
   @media screen and (max-width: 992px) {
@@ -242,7 +242,6 @@ h1 {
     }
 
     #projects h2{
-        max-width: 548px;
         font-size: 2.1em;
     }
 
@@ -279,7 +278,6 @@ h1 {
     }
 
     #projects h2{
-        max-width: 326px;
         font-size: 1.2em;
     }
     
@@ -303,6 +301,15 @@ h1 {
 
     #navbar a {
         margin-right: 1em;
+    }
+
+    #projects {
+        padding-top: 3em;
+        padding-bottom: 3em;
+    }
+
+    .projectboard{
+        margin: 2em 10px;
     }
 }
 
