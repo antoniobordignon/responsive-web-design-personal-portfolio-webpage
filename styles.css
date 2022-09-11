@@ -11,6 +11,7 @@
     --color-contactsection: linear-gradient(90deg,rgb(31, 39, 48) , rgb(62, 78, 96));
     --color-gridborder: rgb(55,55,55);
     --color-effects: rgb(46, 58, 152);
+    --color-effects2: rgb(92, 116, 255);
 }
 
 
@@ -152,6 +153,17 @@ h1 {
     max-width: 25em;
     border: 2px solid var(--color-gridborder);
 }
+
+.project-tile span {
+    color: var(--color-gridborder);
+    transition: color .7s ease-out;   
+    font-size: 1.1em;  
+}
+
+.project-tile:hover span {
+    color: var(--color-effects2);
+  }
+  
 
 #Showall {
     background: var(--color-gridborder);
