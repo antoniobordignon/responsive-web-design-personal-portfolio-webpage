@@ -10,15 +10,17 @@
     --color-projectssection: linear-gradient(90deg,rgb(13, 16, 42) 100% , rgb(9, 11, 27));
     --color-contactsection: linear-gradient(90deg,rgb(31, 39, 48) , rgb(62, 78, 96));
     --color-gridborder: rgb(55,55,55);
+    --color-effects: rgb(46, 58, 152);
 }
 
 
-* {
+*, *::after, *::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    
+    box-sizing: inherit;
 }
+
+
 
 body {
     color: var(--color-font);
@@ -156,6 +158,17 @@ h1 {
     padding: .5em 1em;
     font-family: 'Roboto', sans-serif;
 }
+
+#Showall:hover {
+    background: var(--color-effects);
+    box-shadow: 0 0 .5em var(--color-effects);
+}
+
+#Showall:hover i {
+    transform: translateX(.5em);
+    transition: 1.5s;
+}
+
 
 /*third section*/
 
