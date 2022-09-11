@@ -9,7 +9,7 @@
     --color-welcomesection: linear-gradient(90deg,rgb(20, 26, 32) , rgb(41, 52, 64)) ;
     --color-projectssection: linear-gradient(90deg,rgb(13, 16, 42) 100% , rgb(9, 11, 27));
     --color-contactsection: linear-gradient(90deg,rgb(31, 39, 48) , rgb(62, 78, 96));
-    --color-gridborder: rgb(0, 0, 0);
+    --color-gridborder: rgb(55,55,55);
 }
 
 
