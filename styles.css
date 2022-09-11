@@ -21,8 +21,6 @@
     box-sizing: inherit;
 }
 
-
-
 body {
     color: var(--color-font);
 }
@@ -86,6 +84,8 @@ h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 3.5em;
+    display: flex;
+    text-align: center;
 }
 
 #welcome-section p {
@@ -165,7 +165,7 @@ h1 {
 
 .project-tile:hover span {
     color: var(--color-effects2);
-  }
+}
   
 
 #Showall {
@@ -207,7 +207,8 @@ h1 {
     font-weight: 700;
     font-size: 4em;
     color: var(--color-font);
-
+    display: flex;
+    text-align: center;
 }
 
 #profile-link {
@@ -221,7 +222,7 @@ h1 {
 #profile-link:hover {
     transform: translateY(.25em);
     color: var(--color-effects2);
-  }
+}
 
 @media screen and (max-width: 1300px) {
   .projectboard{
@@ -249,7 +250,6 @@ h1 {
         max-height: 15em;
     } 
     
-
     #contact h2 {
         font-size: 3.4em;
     }
@@ -270,4 +270,39 @@ h1 {
         max-height: 10em;
     } 
 
+    h1 {
+        font-size: 1.8em;
+    }
+    
+    #welcome-section p {
+        font-size: 1em;
+    }
+
+    #projects h2{
+        max-width: 326px;
+        font-size: 1.2em;
+    }
+    
+    #projects p, #Showall {
+        font-size: .7em; 
+    }
+    
+    #projects p {
+        padding: 12px;
+    }
+
+    #contact h2 {
+        font-size: 2em;
+        margin: auto;
+    }
+
+    #profile-link {
+        margin: auto .7em;
+        font-size: .7em;
+    }
+
+    #navbar a {
+        margin-right: 1em;
+    }
 }
+
