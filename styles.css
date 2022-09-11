@@ -63,7 +63,19 @@ img {
 
 #navbar li {
     list-style: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
+}
+
+#About:hover{
+    text-decoration: underline;
+}
+
+#Work:hover{
+    text-decoration: underline;
+}
+
+#Contact:hover{
+   text-decoration: underline;
 }
 
 /*first section*/
